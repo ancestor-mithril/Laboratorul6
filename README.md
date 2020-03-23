@@ -2,7 +2,7 @@
 UAIC_FII_PA_LAB6
 
 ../../target> java -jar Lab6-pentruLab6.jar
-//TODO
+
 
 Compulsory{
   1. Preluat din silde-uri si completat cu adaugarea componentelor si setarea lor intr-o pozitie cardinala.
