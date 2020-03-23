@@ -51,6 +51,9 @@ public class DrawingPanel extends JPanel {
         g.drawImage(image, 0, 0, this);
     }
 
+    /**
+     * reapelez functia de desenare a DrawingPanelului
+     */
     protected void reset(){createOffscreenImage();}
 }
 

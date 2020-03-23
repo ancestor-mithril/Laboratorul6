@@ -41,6 +41,12 @@ public class ControlPanel extends JPanel {
         } catch (IOException ex) { System.err.println(ex); }
     }
     //...TODO
+
+    /**
+     * citesc imaginea de la calea respectiva si o incarc in DrawingPanel::image
+     * redesenez frame-ul pentru ca nu se actualizeaza singur
+     * @param e
+     */
     private void load(ActionEvent e){
         try{
             BufferedImage x = ImageIO.read(new File("..\\imagine.png"));
@@ -51,10 +57,20 @@ public class ControlPanel extends JPanel {
             System.err.println(ex);
         }
     }
+
+    /**
+     * apelez functia de reset si redesenez frame-ul
+     * @param e
+     */
     private void reset(ActionEvent e){
         frame.canvas.reset();
         frame.repaint();
     }
+
+    /**
+     * inchid frame-ul si termin programul
+     * @param e
+     */
     private void exit(ActionEvent e){
         frame.dispose();
         System.exit(0);
