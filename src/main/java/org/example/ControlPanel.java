@@ -37,13 +37,13 @@ public class ControlPanel extends JPanel {
     }
     private void save(ActionEvent e) {
         try {
-            ImageIO.write(frame.canvas.image, "PNG", new File("C:\\Users\\GeorgeS\\Documents\\facultate\\An 2\\cursuri\\sem2\\ProgramareAvansata\\test.png"));
+            ImageIO.write(frame.canvas.image, "PNG", new File("..\\imagine.png"));
         } catch (IOException ex) { System.err.println(ex); }
     }
     //...TODO
     private void load(ActionEvent e){
         try{
-            BufferedImage x = ImageIO.read(new File("C:\\Users\\GeorgeS\\Documents\\facultate\\An 2\\cursuri\\sem2\\ProgramareAvansata\\test.png"));
+            BufferedImage x = ImageIO.read(new File("..\\imagine.png"));
             frame.canvas.image=x;
             frame.canvas.graphics=frame.canvas.image.createGraphics();
             frame.repaint();
