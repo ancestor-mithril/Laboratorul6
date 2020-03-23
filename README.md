@@ -1,6 +1,6 @@
 # Laboratorul6
 UAIC_FII_PA_LAB6
-
+(proiectul a fost creat dintr-un arhetip maven)
 ../../target> java -jar Lab6-pentruLab6.jar
 
 
